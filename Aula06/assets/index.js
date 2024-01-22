@@ -1,84 +1,37 @@
-// Mais operadores Aritmeticos
+function Desafio() {
+  // Desafio
 
-// ( % ) = Modulo
-// ( ** ) = Exponenciação
-// ( ++ ) = Incremento
-// ( -- ) = Decremento
+  // Pedir para o usuario digitar um numero
+  // Converter em numero interio
+  // Pedir para o usuario digitar outro numero
+  // Converter em numero interio
 
-// Modulo: Resto da divisão
+  /* 
+    Mostrar num alert o seguinte texto
+    o resto da divisão de (n1) por (n2) é: (resultado):
 
-console.log(5 % 4); // 1
-console.log(2 % 2); // 0
-console.log(10 % 9); // 1
-console.log(6 % 2); // 0
-console.log(8 % 7); // 1
+    Mostrar num alert o seguinte texto
+    o numero (n1) elevado a  (n2) é: (resultado):
+  */
 
-console.log(" "); // espaço console
+  const firstNumber = prompt("Digite um numero");
+  const secondNumber = prompt("Digite outro numero");
 
-// Exponenciação
+  let integerFirstNumber = parseInt(firstNumber);
+  let integerSecondNumber = parseInt(secondNumber);
 
-console.log(3 ** 2); // 9
-console.log(5 ** 3); // 125
-console.log(2 ** 3); // 8
+  console.log(integerFirstNumber);
+  console.log(integerSecondNumber);
 
-// Incremento e Decremento
-console.log(" "); // espaço console
+  let resultDivision = integerFirstNumber % integerSecondNumber;
+  let resultelevation = integerFirstNumber ** integerSecondNumber;
 
-let n1 = 0;
-
-n1++;
-n1++;
-n1++;
-n1++;
-n1++;
-console.log(n1);
-
-n1--;
-n1--;
-n1--;
-n1--;
-n1--;
-console.log(n1);
-
-console.log(" "); // espaço console
-
-// Ordem do operador de incremento e decremento
-// colocar o nome da let atraz dos operadores pegamos o valor dela e adicionamos uma soma ou adição=
-// se nos fizermos ao contrario colocar os operadores primeiro e o valor da let depois
-// teramos uma alteração quase instantanea, exemplo:
-
-let n2 = 1;
-let n3 = 1;
-
-console.log(n2);
-console.log(n3);
-
-n2++;
-// n2: pega o numero
-// ++: adicionar +1
-console.log(n2); // 2
-
-++n3;
-// ++: adicionar +1
-// n3: pega o numero
-console.log(n3); // 2
-
-console.log(" "); // espaço console
-
-// Mesma coisa com o decremento
-
-let n4 = 1;
-let n5 = 1;
-
-console.log(n4);
-console.log(n5);
-
-n4--;
-// n4: pega o numero
-// --: diminui -1
-console.log(n4); // 2
-
---n5;
-// --: diminui -1
-// n5: pega o numero
-console.log(n5); // 2
+  alert(
+    `o resto da divisão de ${integerFirstNumber} por ${integerSecondNumber} é: ${resultDivision}`
+  );
+  alert(
+    `o numero ${integerFirstNumber} elevado a ${integerSecondNumber} é: ${resultelevation}`
+  );
+}
+Desafio();
+68.7
