@@ -1,37 +1,21 @@
-function Desafio() {
-  // Desafio
+const n1 = prompt("digite o primeiro numero");
+const firstN1 = Number(n1);
 
-  // Pedir para o usuario digitar um numero
-  // Converter em numero interio
-  // Pedir para o usuario digitar outro numero
-  // Converter em numero interio
+const n2 = prompt("digite o primeiro numero");
+const firstN2 = Number(n2);
 
-  /* 
-    Mostrar num alert o seguinte texto
-    o resto da divisão de (n1) por (n2) é: (resultado):
+console.log(typeof firstN1, firstN1);
+console.log(typeof firstN2, firstN2);
 
-    Mostrar num alert o seguinte texto
-    o numero (n1) elevado a  (n2) é: (resultado):
-  */
+// const medResult = firstN1 + firstN2 / 2;
+// presedencia de operadores
 
-  const firstNumber = prompt("Digite um numero");
-  const secondNumber = prompt("Digite outro numero");
+const medResult = (firstN1 + firstN2) / 2;
+alert("seu resultado é: " + medResult);
 
-  let integerFirstNumber = parseInt(firstNumber);
-  let integerSecondNumber = parseInt(secondNumber);
+// Operadores aritmeticos basicos
+// ( + ) = Adição
+// ( - ) = Subtração
+// ( * ) = Multiplicação
+// ( / ) = Divisão
 
-  console.log(integerFirstNumber);
-  console.log(integerSecondNumber);
-
-  let resultDivision = integerFirstNumber % integerSecondNumber;
-  let resultelevation = integerFirstNumber ** integerSecondNumber;
-
-  alert(
-    `o resto da divisão de ${integerFirstNumber} por ${integerSecondNumber} é: ${resultDivision}`
-  );
-  alert(
-    `o numero ${integerFirstNumber} elevado a ${integerSecondNumber} é: ${resultelevation}`
-  );
-}
-Desafio();
-68.7
