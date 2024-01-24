@@ -1,57 +1,32 @@
 function Desafio() {
   // Desafio
 
-  // Fazer o jogador 1 digitar um numero
-  // Fazer o jogador 2 digitar outro numero
+  // Pedir para o usuario digitar um numero
+  // Converter em numero interio
+  // Pedir para o usuario digitar outro numero
+  // Converter em numero interio
 
   /* 
-    Se forem iguais, mostrar mensagem de 'empate'
-    Sortear um numero entre 0 e 1
-
-    se o numero sorteado for 0, ganha quem escolher o numero MENOR
-    se o numero sorteado for 1, ganha quem escolher o numero MAIOR 
+    Pedir para o usuario digitar dois números e mostrar um mensagem informando se foi aprovado ou não A nota de corté é 5
   */
 
-  let n1 = prompt("Jogador 1, digite um numero");
-  let n2 = prompt("Jogador 2, digite outro numero");
+  let n1 = prompt("digite um numero");
+  let n2 = prompt("digite outro numero");
 
   let numb1 = Number(n1);
   let numb2 = Number(n2);
 
-  if (numb1 === numb2) alert("Empate");
+  let resultMedia = (numb1 + numb2) / 2;
 
-  let lockNumber = Math.random() * 2;
-  let lockNumberParse = parseInt(lockNumber);
+  if (resultMedia > 5) alert("Você foi APROVADO!!!");
+  if (resultMedia <= 5) alert("Você foi reprovado, mas não desista =/");
 
-  alert(lockNumberParse);
+  // Codigo Aula
 
-  if (lockNumberParse === 0) {
-    if (numb1 < numb2) alert(`Parabens! o Jogador 2 Ganhou`);
-    if (numb1 > numb2) alert(`Parabens! o Jogador 1 Ganhou`);
+  if (resultMedia > 5) {
+    alert("Parabéns! Você foi aprovado");
   } else {
-    if (numb1 > numb2) alert(`Parabens! o Jogador 1 Ganhou`);
-    if (numb1 < numb2) alert(`Parabens! o Jogador 2 Ganhou`);
-  }
-
-  // Correção Aula
-
-  if (numb1 === numb2) {
-    alert("empate");
-  } else {
-    var nSorteado = parseInt(Math.random() * 2);
-    if (nSorteado === 0) {
-      if (numb1 < numb2) {
-        alert("ganhou jogador 1");
-      } else {
-        alert("ganhador jogador 2");
-      }
-    } else {
-      if (numb2 < numb1) {
-        alert("ganhou jogador 1");
-      } else {
-        alert("ganhador jogador 2");
-      }
-    }
+    alert("Desculpe, mas não foi dessa vez");
   }
 }
 Desafio();
