@@ -28,5 +28,11 @@ function Desafio() {
   } else {
     alert("Você foi reprovado, mas não desista");
   }
+
+  // Codigo da aula
+
+  if (resultMedia > 5 && numb1 === 0 && numb2 === 0)
+    alert("Você foi APROVADO!!!");
+  else alert("Você foi reprovado, mas não desista");
 }
 Desafio();
