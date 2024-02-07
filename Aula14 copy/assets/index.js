@@ -20,7 +20,7 @@ function Desafio() {
 
   while (i <= 1000) {
     document.white(numb1 + " x " + i + " = " + numb1 * i + "<br>");
-    if (i % 10 === 0) {
+    if (i % 10 === 0 && i > 0) {
       containerDiv.innerHTML += "<hr>";
     }
     i = i + 1;
