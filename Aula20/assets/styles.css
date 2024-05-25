@@ -1,0 +1,131 @@
+body {
+    max-height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-color: #2980b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px black;
+    background-color: #fff;
+}
+
+.resultation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    background-color: #333;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.resultation>button {
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.resultation > .result{
+    padding-left: 8px ;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.buttons>button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+
+/* 
+
+
+
+.data {
+    color: white;
+}
+
+.box {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin: 5px;
+}
+
+li:hover {
+    transform: scale(1.1);
+    transition: all .2s;
+}
+
+span {
+    color: green;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .box {
+        width: 100%;
+    }
+} */
